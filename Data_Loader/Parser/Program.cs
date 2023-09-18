@@ -3,4 +3,4 @@
 var ria_pasrser = new Ria_ru();
 ria_pasrser.Parse();
 
-Console.WriteLine("-- End of program --");
+Console.WriteLine("Данные записаны в файл output/News.txt");
