@@ -5,5 +5,3 @@
 
 ![DBPicture](Databases_picture.png)
 
-Positivity assessor link:
-https://huggingface.co/tiiuae/falcon-7b/tree/main
