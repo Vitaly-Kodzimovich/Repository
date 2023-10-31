@@ -1,14 +1,41 @@
 ﻿using System.IO;
 
+using System.Diagnostics;
+using System.Security;
+
+
+int Positivity_Python_Assessor(string text)
+{
+
+
+    ProcessStartInfo proc_start_info = new ProcessStartInfo();
+    proc_start_info.FileName = "bash";
+    proc_start_info.Arguments = "Python_scripts/script.sh";
+
+    proc_start_info.RedirectStandardOutput = true;
+    proc_start_info.UseShellExecute = false;
+    proc_start_info.CreateNoWindow = true;
+
+    Process proc = new Process();
+    proc.StartInfo = proc_start_info;
+    proc.Start();
+    string result = proc.StandardOutput.ReadToEnd();
+
+    Console.WriteLine(result);
+
+    return 0;
+}
+
+
 string PositivityAssessor(string text)
 {
     int Positivity = 0;
-    return text + "#" + Positivity.ToString() + "\n";
+    return text + "###" + Positivity.ToString() + "\n";
 }
 
 string NewsWithPositivityOutput = "";
 
-string line;
+string? line;
 try
 {
     
@@ -32,6 +59,7 @@ catch(Exception e)
 finally
 {
     Console.WriteLine("Чтение произведено успешно");
+    Positivity_Python_Assessor("Hello");
 }
 
 try
