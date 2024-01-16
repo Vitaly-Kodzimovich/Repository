@@ -1,0 +1,220 @@
+/* lato-100 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/lato-v24-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* lato-100italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 100;
+    src: url('../fonts/lato-v24-latin-100italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* lato-300 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/lato-v24-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* lato-300italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 300;
+    src: url('../fonts/lato-v24-latin-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* lato-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* lato-italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/lato-v24-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* lato-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/lato-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* lato-700italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../fonts/lato-v24-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* lato-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/lato-v24-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* lato-900italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 900;
+    src: url('../fonts/lato-v24-latin-900italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+
+
+
+html{
+    box-sizing: border-box;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: "Lato";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: #5dc288;
+    top:0;
+    left:0;
+    width: 100%;
+}
+
+.header__wrapper{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 6px;
+    padding-left: 25px;
+    padding-right: 30px;
+}
+
+.header__list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-top: 2px;
+}
+
+.header__item{
+    margin-right: 35px;
+}
+
+.header__item:last-child{
+    margin-right: 0px;
+}
+
+.header__logo{
+    font-size: 24px;
+    line-height: 30px;
+    color: rgb(245, 255, 255);
+    text-decoration: none;
+    padding-bottom: 4px;
+}
+
+.header__link{
+    font-size: 18px;
+    line-height: 24px;
+    color: mintcream;
+    text-decoration: none;
+}
+
+.header__link:hover, .header__link:focus, .header__link:active{
+    opacity: 0.75;
+}
+
+
+.main{
+  background-color: mintcream;
+  top:0;
+  left:0;
+  width: 100%;
+}
+
+.main_wrapper{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 24px;
+}
+
+.main_day_news{
+  display: flex;
+}
+
+.main_day_news_text{
+  padding-bottom: 20px;
+}
+
+.main_day_news_title{
+  font-family: "Lato";
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.main_day_news_content{
+  font-family: "Lato";
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+
+.news_list{
+  padding-top: 10px;
+}
+
+.news_item{
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.news_item:last-child{
+  margin-bottom: 4px;
+}
+
+.news_title{
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 700; 
+}
+
+
