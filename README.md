@@ -1,7 +1,1 @@
-Картинка проекта:
-![ProjectPicture](Picture.png)
-
-Картинка Баз Данных:
-
-![DBPicture](Databases_picture.png)
-
+Site with positivity evaluator (Not assembled yet)
