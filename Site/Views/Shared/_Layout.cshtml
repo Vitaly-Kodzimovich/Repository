@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Site_Name</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/reset.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+		<link rel="stylesheet" href="~/css/bbc.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Site.styles.css" asp-append-version="true" />
+</head>
+<body>
+		<header class="header">
+			<div class="wrapper">
+				<div class="header__wrapper">
+					<div class="header__logo">LOGOGO</div>
+					<div class="header__nav">
+						<ul class="header__list">
+							<li class="header__item">
+								<a class="header__link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+							</li>
+							<li class="header__item">
+								<a class="header__link" asp-controller="Home" asp-action="News">News</a>
+							</li>
+							<li class="header__item">
+								<a class="header__link" asp-controller="Home" asp-action="About">About</a>
+							</li>
+							<li class="header__item">
+								<a class="header__link" asp-controller="Home" asp-action="Profile">Profile</a>
+							</li>
+	
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2077 - Site - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
